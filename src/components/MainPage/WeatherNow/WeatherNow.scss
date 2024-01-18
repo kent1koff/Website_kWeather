@@ -1,0 +1,85 @@
+.feelsLike {
+  gap: 10px;
+}
+
+.sun {
+  width: 48px;
+  height: 48px;
+}
+
+.row_sun {
+  gap: 11px;
+  margin-top: 17px;
+  min-width: 245px;
+}
+
+.humidity {
+  width: 60px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.wind {
+  width: 60px;
+  height: 55px;
+}
+
+.pressure {
+  width: 58px;
+  height: 58px;  
+}
+
+.visibility {
+  width: 58px;
+  height: 58px;
+}
+
+.thirdSection {
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.infoCardWeatherNow {
+  gap: 26px;
+}
+
+.firstSection {
+  margin-top: 43px;
+}
+
+.rowWeather {
+  gap: 20px;
+}
+
+.iconWeatherBig {
+  width: 170px;
+  height: 170px;
+  margin-top: 80px;
+}
+
+.gapWeatherInfo {
+  gap: 9px;
+  width: 105px;
+}
+
+@media (max-width: 992px) {
+  .infoCardWeatherNow {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoCardWeatherNow {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .iconWeatherBig {
+    margin-top: 0px;
+  }
+
+  .thirdSection {
+    margin-top: 0px;
+  }
+}

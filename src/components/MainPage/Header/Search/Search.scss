@@ -1,0 +1,113 @@
+@use '../../../../styles/variables' as *;
+
+.search {
+  width: 40px;
+  height: 46px;
+}
+
+.inputHeader {
+  &.dark {
+    background: $colorVariant2;
+    height: 62px;
+    color: $colorVariant3;
+  }
+  &:not(.dark) {
+    background: $colorVariant8;
+    border: 1px solid $colorVariant9;
+    height: 60px;
+    color: $colorVariant7;
+  }
+  width: 599px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  padding: 0 102px 0 102px;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  cursor: url(../../../../images/Header/cursorInput.png), auto;
+}
+
+.rowInputHeader {
+  position: relative;
+}
+
+.inputHeader::placeholder {
+  &.dark {
+    color: $colorVariant3;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttonHeaderSearch {
+  position: absolute;
+  left: 33px;
+  top: 8px;
+  background: transparent;
+}
+
+.currentLocation {
+  width: 50px;
+  height: 50px;
+}
+
+.buttonLocation {
+  height: 50px;
+  position: absolute;
+  right: 25px;
+  top: 6px;
+  background: transparent;
+}
+
+.errorSearch {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 5px;
+}
+
+.smileError {
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .rowInputHeader {
+    left:50%;
+    transform:translate(-50%, 40%);
+    margin-top: 10px;
+  }
+
+  .inputHeader {
+    width: 771px;
+    padding: 0 0px 0 102px;
+  }
+
+  .errorSearch {
+    top: 100px;
+  }
+
+  .buttonLocation {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .inputHeader {
+    width: 598px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputHeader {
+    width: 285px;
+    padding: 0 0px 0 90px;
+  }
+
+  .smileError {
+    display: none;
+  }
+}

@@ -1,0 +1,217 @@
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: Poppins;
+  transition: all 1s;
+}
+
+.textSwitchHeader {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16px;
+  margin-top: 8px;
+}
+
+h1 {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 96px;
+  font-weight: 700;
+}
+
+h3 {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.dateInfoCity {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mainTempWeatherNow {
+  &.dark {
+    background: linear-gradient(84deg, #FFF -16.56%, rgba(255, 255, 255, 0.00) 118.43%);
+    background-clip: text;
+  }
+  &:not(.dark) {
+    background: linear-gradient(80deg, #292929 -2.93%, rgba(255, 255, 255, 0.00) 212.44%);
+    background-clip: text;
+  }
+  font-size: 80px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 65px;
+  margin-bottom: 7px;
+}
+
+.feelsLikeWeatherNow {
+  &.dark {
+    color: $colorVariant5;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feelsLikeTextWeatherNow {
+  &.dark {
+    color: $colorVariant5;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 32px;
+  font-weight: 600;
+}
+
+p {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sunTime {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 16px;
+  font-weight: 600;
+}
+
+small {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dayForecast {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  };
+  font-size: 27px;
+  font-weight: 600;
+  min-width: 150px;
+  text-align: center;
+}
+
+.hForecastTime {
+  &.dark {
+    color: $colorVariant7;
+  }
+  &:not(.dark) {
+    color: $colorVariant4;
+  }
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.hForecastText {
+  &.dark {
+    color: $colorVariant7;
+  }
+  &:not(.dark) {
+    color: $colorVariant4;
+  }
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.formInputName {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cookieText {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.errorSearchText {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant9;
+  }
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .textSwitchHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .cookieText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cookieText {
+    font-size: 17px;
+  }
+
+  .errorSearchText {
+    &:not(.dark) {
+      color: $colorVariant4;
+    }
+  }
+}

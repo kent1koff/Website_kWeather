@@ -1,0 +1,73 @@
+@use './variables' as *;
+
+h3,
+h1,
+p,
+input,
+button,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  &.dark {
+    background-image: url(../images/bgrNight.jpg);
+  }
+  &:not(.dark) {
+    background-image: url(../images/bgrDay.jpg);
+  }
+  background-size: auto;
+  background-position: top;
+}
+
+header {
+  margin: 63px 25px 49px 25px;
+  position: relative;
+}
+
+main {
+  gap: 55px;
+  margin: 0 25px 49px 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media (max-width: 1400px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    margin: 65px 25px 0px 25px;
+    gap: 20px;
+  }
+
+  main {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 768px) {ч
+  header {
+    margin-top: 65px;
+  }
+
+  main {
+    margin: 0 0px 49px 0px;
+  }
+
+  h3 {
+    font-size: 29px;
+  }
+}

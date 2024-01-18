@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+
+.cookie {
+  &.dark {
+    background-color: $colorVariant16;
+  }
+  &:not(.dark) {
+    background-color: $colorVariant13;
+  }
+  gap: 30px;
+  height: 50px;
+}
+
+.cookieButton {
+  &.dark {
+    color: $colorVariant4;
+  }
+  &:not(.dark) {
+    color: $colorVariant7;
+  }
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.accept {
+  background-color: $colorVariant14;
+}
+
+.reject {
+  background-color: $colorVariant15;
+}
+
+.gapCookieButton {
+  gap: 15px;
+}
+
+.cookiePhoto {
+  height: 40px;
+}
+
+.cookieTextPicture {
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .cookie {
+    flex-direction: column;
+    height: 120px;
+    gap: 10px;
+  }
+}

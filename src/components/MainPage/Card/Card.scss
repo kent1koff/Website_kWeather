@@ -1,0 +1,13 @@
+@use '../../../styles/variables' as *;
+
+.card {
+  &.dark {
+    background: $colorVariant2;
+  }
+  &:not(.dark) {
+    background: $colorVariant8;
+  }
+  height: 330px;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.50));
+  border-radius: 30px;
+}

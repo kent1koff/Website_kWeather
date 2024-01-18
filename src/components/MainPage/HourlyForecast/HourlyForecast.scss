@@ -1,0 +1,91 @@
+@use '../../../styles/variables' as *;
+
+.smallCard {
+  &.dark {
+    background: $colorVariant6;
+  }
+  width: 130px;
+  height: 240px;
+  border-radius: 40px;
+  margin: 5px 0px 15px 0px;
+  gap: 11px;
+  cursor: pointer;
+}
+
+.middleIconWeather {
+  width: 80px;
+  height: 80px;
+}
+
+.slick-list {
+  max-width: 710px;
+  margin: 0px 74px 0px 89px;
+}
+
+.gapCards {
+  gap: 15px;
+}
+
+.slick-arrow::before {
+  font-size: 80px;
+}
+
+.slick-arrow {
+  top: 42%;
+}
+
+.slick-prev::before {
+  font-size: 50px;
+  color:  $colorVariant10;
+}
+
+.slick-prev {
+  left: 35px;
+}
+
+.slick-next {
+  right: 64px;
+}
+
+.slick-next::before {
+  font-size: 50px;
+  color: $colorVariant10;
+}
+
+.yellowCard {
+  background: $colorVariant11;
+}
+
+.darkCard {
+  background: $colorVariant12;
+}
+
+@media (max-width: 992px) {
+  .slick-list {
+    margin: 0px 115px 0px 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slick-next::before {
+    content: '🢖';
+    font-size: 85px;
+  }
+
+  .slick-prev::before {
+    content: '🢔';
+    font-size: 85px;
+  }
+
+  .slick-arrow {
+    top: 28%;
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 31px;
+  }
+}

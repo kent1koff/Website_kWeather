@@ -1,0 +1,63 @@
+@use '../../../../styles/variables' as *;
+
+.selectLanguage {
+  background: none;
+  height: 62px;
+  position: relative;
+  cursor: pointer;
+}
+
+.iconSelectLanguage {
+  height: 62px;
+  width: 62px;
+}
+
+.centrLanguage {
+  position: absolute;
+  z-index: 1;
+  top: 62px;
+  right: 0px;
+}
+
+.iconSelectLanguageSmall {
+  height: 45px;
+  width: 45px;
+}
+
+.columnLanguage {
+  gap: 12px;
+}
+
+.moreLanguages {
+  padding-bottom: 184px;
+  transition: all 1s;
+}
+
+.dropDownLanguages {
+  background: transparent;
+  height: 45px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .selectLanguage {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .selectLanguage {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+  }
+
+  .columnLanguage {
+    flex-direction: row-reverse;
+  }
+
+  .centrLanguage {
+    top: -44px;
+    right: 57px;
+  }
+}
